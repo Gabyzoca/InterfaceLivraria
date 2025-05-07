@@ -1,0 +1,219 @@
+/* Cores usadas */
+:root {
+  --cor-vinho: #a52a2a;       /* Tom de vinho */
+  --cor-marrom-escuro: #543d35; /* Marrom mais escuro */
+  --cor-marrom-medio: #8b4513;  /* Marrom médio */
+  --cor-bege-claro: #f5f5dc;   /* Bege claro */
+  --cor-bege-medio: #deb887;   /* Bege médio */
+  --cor-texto-escuro: #333;    /* Cor de texto escura geral */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cor-bege-claro); /* Fundo geral bege claro */
+  color: var(--cor-texto-escuro);        /* Cor do texto padrão */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*cabeçalho*/
+.cabecalho {
+  background-color: var(--cor-marrom-escuro) !important; /* Fundo marrom escuro */
+}
+
+.texto-logo {
+  color: var(--cor-bege-claro) !important; /* Texto do logo bege claro */
+  text-decoration: none; /* Remove sublinhado do link do logo */
+  font-size: 2rem; /* Aumenta o tamanho da fonte da logo */
+  margin-left: 1rem; /* Desloca um pouco para a direita */
+}
+
+.texto-logo:hover {
+  color: var(--cor-bege-claro) !important; /* Mantém a cor no hover */
+}
+
+header .campo-texto {
+  background-color: #fffaf0; /* Bege bem claro para o input de busca */
+  border: 1px solid var(--cor-marrom-medio);
+  color: var(--cor-texto-escuro);
+}
+
+header .botao {
+  color: var(--cor-bege-claro);
+  border-color: var(--cor-bege-claro);
+}
+
+header .botao:hover {
+  background-color: var(--cor-bege-claro);
+  color: var(--cor-marrom-escuro);
+  border-color: var(--cor-bege-claro);
+}
+
+header a.link {
+  text-decoration: none; /* Remove sublinhado dos links do cabeçalho */
+}
+
+.texto-direita {
+  text-align: end;
+}
+
+.linha-flex {
+  display: flex;
+  align-items: center;
+}
+
+.area-logo {
+  flex: 1; /* Ocupa o máximo de espaço possível, empurrando os outros para as laterais */
+}
+
+.area-busca {
+  flex: 2; /* Ocupa mais espaço que o logo */
+  margin: 0 1rem; /* Adiciona margem lateral para espaçamento */
+}
+
+.area-usuario {
+  flex: 1;
+  text-align: right;
+}
+
+/* Estilos para os botões de usuário e carrinho */
+.botao-usuario,
+.botao-carrinho {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: var(--cor-bege-claro); /* Define a cor inicial do texto/ícone */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Adiciona transição para cor e background */
+}
+
+.botao-usuario:hover,
+.botao-carrinho:hover {
+  color: var(--cor-vinho) !important; /* Altera a cor para vinho no hover */
+  /* Se quiser adicionar um fundo полупрозрачный no hover: */
+  /* background-color: rgba(var(--cor-vinho-rgb, 165, 42, 42), 0.1) !important; */
+}
+
+/* Estilos para a barra de navegação */
+.menu {
+  background-color: var(--cor-bege-medio) !important; /* Fundo bege médio */
+}
+
+.lista-menu .link {
+  color: var(--cor-marrom-escuro) !important; /* Links da navegação marrom escuro */
+}
+
+.lista-menu .link:hover {
+  color: var(--cor-vinho) !important; /* Hover dos links da navegação em vinho */
+}
+
+.item {
+  list-style: none;
+}
+
+/* Estilos para o Carrossel Principal */
+.principal {
+  margin-top: 2rem;
+}
+
+.carrossel {
+  margin-bottom: 2rem;
+}
+
+.indicadores button {
+  background-color: var(--cor-marrom-medio);
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  opacity: 0.5;
+}
+
+.indicadores .ativo {
+  opacity: 1;
+}
+
+.slides .slide {
+  height: 400px;
+  background-color: var(--cor-bege-claro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-banner {
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.legenda {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--cor-bege-claro);
+  padding: 1rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bg-marrom-transparente{
+  background-color: rgba(98, 49, 8, 0.7);
+}
+
+/* Estilos para o Carrossel de Destaques */
+#carrossel-destaques {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.livro-carrossel {
+  display: flex;
+  flex-direction: column; /* Empilha a imagem e a legenda */
+  align-items: center;
+  text-align: center; /* Centraliza o texto */
+}
+
+.livro-carrossel img {
+  max-height: 300px; /* Ajuste a altura máxima da capa */
+  object-fit: contain; /* Garante que a imagem caiba no espaço */
+  margin-bottom: 1rem; /* Espaço entre a capa e a legenda */
+  border-radius: 8px; /* Opcional: bordas arredondadas nas capas */
+}
+
+.legenda-carrossel {
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo полупрозрачный para a legenda */
+  color: var(--cor-bege-claro);
+  padding: 1rem;
+  border-radius: 8px;
+  width: 80%; /* Largura da legenda */
+  margin-top: 1rem; /* Espaço entre a capa e a legenda */
+}
+
+.legenda-carrossel h5 {
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos para o rodapé */
+.rodape {
+  background-color: var(--cor-marrom-escuro) !important; /* Fundo marrom escuro */
+}
+
+.texto-bege {
+  color: var(--cor-bege-claro) !important; /* Texto do rodapé bege claro */
+  text-decoration: none; /* Remove sublinhado dos textos do rodapé */
+}
+
+.link:hover {
+  color: var(--cor-vinho) !important; /* Hover dos links do rodapé em vinho */
+}
+
+.social {
+  margin-top: 0.5rem;
+}
+
+.texto-rodape {
+  margin-bottom: 0;
+}
