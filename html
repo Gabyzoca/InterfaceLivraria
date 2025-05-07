@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BooksyLand - Sua Livraria Online</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho bg-marrom py-3">
+        <div class="container">
+            <div class="linha-flex">
+                <div class="area-logo">
+                    <a class="texto-logo texto-bege fw-bold" href="#">
+                        BooksyLand
+                    </a>
+                </div>
+                <div class="area-busca">
+                    <form class="d-flex">
+                        <input class="campo-texto form-control me-2" type="search" placeholder="Buscar livros..."
+                            aria-label="Search">
+                        <button class="botao primario btn btn-outline-bege" type="submit"><i
+                                class="icone-busca fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="area-usuario texto-direita">
+                    <button class="botao-usuario btn btn-link texto-bege me-3" onclick="alert('Login/Criar Conta')">
+                        <i class="icone-usuario fas fa-user fs-5"></i> Login / Criar Conta
+                    </button>
+                    <button class="botao-carrinho btn btn-link texto-bege"
+                        onclick="alert(' Carrinho de compras')">
+                        <i class="icone-carrinho fas fa-shopping-cart fs-5"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="menu bg-bege py-2">
+        <div class="container">
+            <ul class="lista-menu nav justify-content-center">
+                <li class="item">
+                    <a class="link texto-marrom fw-bold" href="#"><i class="icone-lista fas fa-list me-2"></i> Todas as
+                        categorias</a>
+                </li>
+                <li class="item ms-md-3">
+                    <a class="link texto-marrom fw-bold" href="#">Promoções</a>
+                </li>
+                <li class="item ms-md-3">
+                    <a class="link texto-marrom fw-bold" href="#">Novidades</a>
+                </li>
+                <li class="item ms-md-3">
+                    <a class="link texto-marrom fw-bold" href="#">Mais Vendidos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="principal container mt-4">
+        <div id="carrossel-principal" class="carrossel slide" data-bs-ride="carousel">
+            <div class="indicadores carousel-indicators">
+                <button type="button" data-bs-target="#carrossel-principal" data-bs-slide-to="0" class="ativo"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrossel-principal" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrossel-principal" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="slides carousel-inner rounded">
+                <div class="slide ativo carousel-item active">
+                    <img src="banner.png" class="imagem-banner d-block w-100"
+                        alt="Banner Dia Mundial do Livro">
+                    <div class="legenda carousel-caption d-none d-md-block bg-marrom-transparente rounded">
+                        <h5>Dia Mundial do Livro</h5>
+                        <p>Celebre a magia da leitura!</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="destaques container mt-5">
+        <h2 class="titulo texto-vinho text-center">Livros em Destaque</h2>
+        <div id="carrossel-destaques" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="livro-carrossel">
+                        <img src="https://m.media-amazon.com/images/I/81iqH8dpjuL.jpg" class="d-block w-100"
+                            alt="A Biblioteca da Meia-Noite">
+                        <div class="legenda-carrossel">
+                            <h5>A Biblioteca da Meia-Noite</h5>
+                            <p>Um romance sobre escolhas, arrependimentos e segundas chances.</p>
+                            <a href="#" class="botao secundario btn btn-outline-marrom btn-sm">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="livro-carrossel">
+                        <img src="https://m.media-amazon.com/images/I/81CGmkRG9GL.jpg" class="d-block w-100"
+                            alt="O Nome do Vento">
+                        <div class="legenda-carrossel">
+                            <h5>O Nome do Vento</h5>
+                            <p>O início da lendária história de Kvothe, um herói e mago.</p>
+                            <a href="#" class="botao secundario btn btn-outline-marrom btn-sm">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="livro-carrossel">
+                        <img src="https://images.tcdn.com.br/img/img_prod/597071/auto_da_compadecida_ariano_suassuna_236553_3_0ce0840046c15f56831949081c9d3b5a.png"
+                            class="d-block w-100" alt="O Auto da Compadecida">
+                        <div class="legenda-carrossel">
+                            <h5>O Auto da Compadecida</h5>
+                            <p>Uma divertida e crítica peça teatral sobre o sertão nordestino.</p>
+                            <a href="#" class="botao secundario btn btn-outline-marrom btn-sm">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="livro-carrossel">
+                        <img src="https://m.media-amazon.com/images/I/815iPX0SgkL.jpg" class="d-block w-100"
+                            alt="O Poder do Hábito">
+                        <div class="legenda-carrossel">
+                            <h5>O Poder do Hábito</h5>
+                            <p>Uma análise fascinante sobre a ciência da formação e mudança de hábitos.</p>
+                            <a href="#" class="botao secundario btn btn-outline-marrom btn-sm">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-destaques"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrossel-destaques"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+
+    <footer class="rodape bg-marrom texto-bege text-center py-3 mt-5">
+        <p class="texto-rodape">&copy; 2025 BooksyLand - Todos os direitos reservados.</p>
+        <div class="social mt-2">
+            <a href="#" class="link texto-bege me-2"><i class="icone-instagram fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="link texto-bege me-2"><i class="icone-linkedin fab fa-linkedin fa-lg"></i></a>
+            <a href="#" class="link texto-bege"><i class="icone-twitter fab fa-x-twitter fa-lg"></i></a>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
