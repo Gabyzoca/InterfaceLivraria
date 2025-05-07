@@ -24,17 +24,17 @@ body {
 
 .texto-logo {
   color: var(--cor-bege-claro) !important; /* Texto do logo bege claro */
-  text-decoration: none; /* Remove sublinhado do link do logo */
-  font-size: 2rem; /* Aumenta o tamanho da fonte da logo */
-  margin-left: 1rem; /* Desloca um pouco para a direita */
+  text-decoration: none; 
+  font-size: 2rem; 
+  margin-left: 1rem; 
 }
 
 .texto-logo:hover {
-  color: var(--cor-bege-claro) !important; /* Mantém a cor no hover */
+  color: var(--cor-bege-claro) !important; 
 }
 
 header .campo-texto {
-  background-color: #fffaf0; /* Bege bem claro para o input de busca */
+  background-color: #fffaf0; 
   border: 1px solid var(--cor-marrom-medio);
   color: var(--cor-texto-escuro);
 }
@@ -51,8 +51,7 @@ header .botao:hover {
 }
 
 header a.link {
-  text-decoration: none; /* Remove sublinhado dos links do cabeçalho */
-}
+  text-decoration: none;
 
 .texto-direita {
   text-align: end;
@@ -64,12 +63,11 @@ header a.link {
 }
 
 .area-logo {
-  flex: 1; /* Ocupa o máximo de espaço possível, empurrando os outros para as laterais */
-}
+  flex: 1; 
 
 .area-busca {
-  flex: 2; /* Ocupa mais espaço que o logo */
-  margin: 0 1rem; /* Adiciona margem lateral para espaçamento */
+  flex: 2; 
+  margin: 0 1rem;
 }
 
 .area-usuario {
@@ -77,7 +75,7 @@ header a.link {
   text-align: right;
 }
 
-/* Estilos para os botões de usuário e carrinho */
+
 .botao-usuario,
 .botao-carrinho {
   background: none;
@@ -85,35 +83,34 @@ header a.link {
   padding: 0;
   margin: 0;
   cursor: pointer;
-  color: var(--cor-bege-claro); /* Define a cor inicial do texto/ícone */
-  transition: color 0.3s ease, background-color 0.3s ease; /* Adiciona transição para cor e background */
+  color: var(--cor-bege-claro); 
+  transition: color 0.3s ease, background-color 0.3s ease; 
 }
 
 .botao-usuario:hover,
 .botao-carrinho:hover {
-  color: var(--cor-vinho) !important; /* Altera a cor para vinho no hover */
-  /* Se quiser adicionar um fundo полупрозрачный no hover: */
-  /* background-color: rgba(var(--cor-vinho-rgb, 165, 42, 42), 0.1) !important; */
+  color: var(--cor-vinho) !important; /
+ 
 }
 
-/* Estilos para a barra de navegação */
+
 .menu {
-  background-color: var(--cor-bege-medio) !important; /* Fundo bege médio */
+  background-color: var(--cor-bege-medio) !important;
 }
 
 .lista-menu .link {
-  color: var(--cor-marrom-escuro) !important; /* Links da navegação marrom escuro */
+  color: var(--cor-marrom-escuro) !important; 
 }
 
 .lista-menu .link:hover {
-  color: var(--cor-vinho) !important; /* Hover dos links da navegação em vinho */
+  color: var(--cor-vinho) !important; 
 }
 
 .item {
   list-style: none;
 }
 
-/* Estilos para o Carrossel Principal */
+
 .principal {
   margin-top: 2rem;
 }
@@ -163,7 +160,7 @@ header a.link {
   background-color: rgba(98, 49, 8, 0.7);
 }
 
-/* Estilos para o Carrossel de Destaques */
+
 #carrossel-destaques {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -171,25 +168,25 @@ header a.link {
 
 .livro-carrossel {
   display: flex;
-  flex-direction: column; /* Empilha a imagem e a legenda */
+  flex-direction: column; 
   align-items: center;
-  text-align: center; /* Centraliza o texto */
+  text-align: center;
 }
 
 .livro-carrossel img {
-  max-height: 300px; /* Ajuste a altura máxima da capa */
-  object-fit: contain; /* Garante que a imagem caiba no espaço */
-  margin-bottom: 1rem; /* Espaço entre a capa e a legenda */
-  border-radius: 8px; /* Opcional: bordas arredondadas nas capas */
+  max-height: 300px; 
+  object-fit: contain; 
+  margin-bottom: 1rem; 
+  border-radius: 8px; 
 }
 
 .legenda-carrossel {
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo полупрозрачный para a legenda */
+  background-color: rgba(0, 0, 0, 0.5);
   color: var(--cor-bege-claro);
   padding: 1rem;
   border-radius: 8px;
-  width: 80%; /* Largura da legenda */
-  margin-top: 1rem; /* Espaço entre a capa e a legenda */
+  width: 80%; 
+  margin-top: 1rem;
 }
 
 .legenda-carrossel h5 {
@@ -198,16 +195,16 @@ header a.link {
 
 /* Estilos para o rodapé */
 .rodape {
-  background-color: var(--cor-marrom-escuro) !important; /* Fundo marrom escuro */
+  background-color: var(--cor-marrom-escuro) !important; 
 }
 
 .texto-bege {
-  color: var(--cor-bege-claro) !important; /* Texto do rodapé bege claro */
-  text-decoration: none; /* Remove sublinhado dos textos do rodapé */
+  color: var(--cor-bege-claro) !important; 
+  text-decoration: none; 
 }
 
 .link:hover {
-  color: var(--cor-vinho) !important; /* Hover dos links do rodapé em vinho */
+  color: var(--cor-vinho) !important; 
 }
 
 .social {
